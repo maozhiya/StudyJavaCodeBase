@@ -154,9 +154,11 @@ public class Day02 {
         // 1. 导包
         // import java.util.Random;
         // 2. 创建对象
+
         Random r = new Random();
         // 3. 获取随机数
-        int ran = r.nextInt(10); // 获取数据的范围: [0, 10) --包括 0 但不包括 10
+        int ran = r.nextInt(10);
+        // 获取数据的范围: [0, 10) --包括 0 但不包括 10
         System.out.println("ran: " + ran);
     }
 }

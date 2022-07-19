@@ -6,6 +6,7 @@ package Study.Day09;
 public class StudentDemo {
     public static void main(String[] args) {
         Student s = new Student();
+
         /*
          s.name = "高一";
          s.age = 16;

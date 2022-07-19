@@ -6,11 +6,11 @@ package Study.Day18;
 public class Demo {
     public static void main(String[] args) {
         // 创建对象, 调用方法
-        Father f = new Father();
+        Fu f = new Fu();
         f.show();
 
-        Son s = new Son();
-        s.method();
-        s.show();
+        Zi z = new Zi();
+        z.method();
+        z.show();
     }
 }

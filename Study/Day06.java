@@ -1,4 +1,4 @@
-package StudyJava;
+package Study;
 
 /**
  * @author Li
@@ -7,7 +7,7 @@ public class Day06 {
     public static void main(String[] args) {
         // 一: 方法重载
         System.out.println("一: 方法重载");
-        // 1. 方法重载(方法重载是一个类的多态性表现)
+        // 1. 方法重载
         // 1.1同一个类中定义的多个方法之间的关系, 满足下列条件的多个方法互相构成重载
         // 1.1.1 多个方法再同一个类中
         // 1.1.2 多个方法具有相同的方法名

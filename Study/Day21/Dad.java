@@ -4,26 +4,19 @@ package Study.Day21;
  * @author Li
  */
 public class Dad {
-    public static void main(String[] args) {
-        Dad d = new Dad();
-        d.show();
-        d.show1();
-        d.show2();
-        d.show3();
-    }
-    private void show() {
-        System.out.println("private");
+    public void show() {
+        System.out.println("Dad 中的 show 方法被调用");
     }
 
-    void show1() {
-        System.out.println("默认");
+    private void show1() {
+        System.out.println("Dad 中的 show1 方法被调用(private)");
     }
 
-    protected void show2() {
-        System.out.println("protected");
+    void show2() {
+        System.out.println("Dad 中的 show2 方法被调用(默认修饰符)");
     }
 
     public void show3() {
-        System.out.println("public");
+        System.out.println("Dad 中的 show3 方法被调用(public)");
     }
 }

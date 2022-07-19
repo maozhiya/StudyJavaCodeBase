@@ -3,43 +3,37 @@ package Study.Day19;
 /**
  * @author Li
  */
-public class Son extends Father {
+
+/*
+    总结：子类方法访问一个变量
+        1.在子类的局部范围寻找
+        2.在子类的成员范围寻找
+        3.在父类的成员范围寻找。
+ *
+ */
+
+public class Son extends Dad{
     public String name = "Li";
-    public int age = 20;
-
+    public int time = 2018;
+    public int day = 18;
     public void show() {
-        System.out.println(name + "," + age);
-    }
-    public void method() {
-        int age = 17;
-        System.out.println(name + "," + age);
-    }
-    public void showOne() {
-        // 访问子类成员
-        System.out.println("this.age:" + this.age);
-    }
-    public void showTwo(){
-        // 访问父类成员
-        System.out.println("super.age:" + super.age);
-    }
-
-    public Son() {
-        System.out.println("Son 中无参构造方法被调用");
-    }
-    public Son(int age) {
-        System.out.println("Son 中带参构造方法被调用");
-    }
-
-    /*public Zi (int age) {
-        super();
-        super(17);
-        System.out.println("Zi 中带参构造方法被调用");
-    }
-*/
-
-    @Override
-    public void MethodOverride() {
-        super.MethodOverride();
-        System.out.println("Son MethodOverride");
+        int day = 20180101;
+        System.out.println("age:" + age);
+        System.out.println("name:" + name);
+        System.out.println("time:" + time);
+        System.out.println("day:" + day);
+        /*
+        *   关键字:
+        *       this:
+        *           访问成员变量: this.成员变量–访问本类成员变量
+        *           访问构造方法: this(…) --访问本类构造方法
+        *           访问成员方法: this.成员方法–访问本类成员方法
+        *       super:
+        *           访问成员变量: super.成员变量–访问父类成员变量
+        *           访问构造方法: super(…) --访问父类构造方法
+        *           访问成员方法: super.成员方法–访问父类成员方法
+        * */
+        System.out.println("this.day:" + this.day);
+        System.out.println("super.day:" + super.day);
     }
 }

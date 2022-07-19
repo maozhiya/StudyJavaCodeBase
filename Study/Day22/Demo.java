@@ -1,4 +1,4 @@
-package Study.Day19;
+package Study.Day22;
 
 /**
  * @author Li
@@ -6,7 +6,9 @@ package Study.Day19;
 public class Demo {
     public static void main(String[] args) {
         Son s = new Son();
-        s.show();
-
+        s.hang();
+        s.smoke();
+        s.game();
+        // s.dance();
     }
 }
